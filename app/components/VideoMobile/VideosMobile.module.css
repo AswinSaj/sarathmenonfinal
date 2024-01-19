@@ -1,0 +1,131 @@
+.title {
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+}
+.films {
+  display: none;
+  margin: 5rem auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carouselWrapper {
+  display: flex;
+  cursor: grab;
+  align-items: center;
+  width: 100vw;
+  margin-top: 5rem;
+}
+.carouselWrapper:active {
+  cursor: grabbing;
+}
+.dotscontainer {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.dot {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--text);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--text);
+}
+
+.dot.inactive {
+  background-color: var(--background);
+}
+
+.videoWrapper {
+  min-width: 100vw;
+  height: 73svh;
+  padding: 1rem;
+  background-color: var(--background);
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+.videoImage {
+  width: 100%;
+  aspect-ratio: 16 /9;
+  background-color: var(--background);
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.videoImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.videoCopy {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.videoTitle {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.videoTitle h4 {
+  font-weight: bold;
+  font-size: var(--text-lg);
+  text-wrap: nowrap;
+
+  max-width: calc(100% - 150px);
+}
+.videoDescription {
+  font-weight: 400;
+  font-size: var(--text-sm);
+}
+.videoDescription span {
+  display: inline-block;
+
+  font-size: var(--text-xs);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--text-lighter);
+}
+.videoDescription span:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .films {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .videoWrapper {
+    max-height: 60svh;
+  }
+}
+@media (max-width: 425px) {
+  .films {
+    margin-bottom: 2rem;
+  }
+  .videoTitle h4 {
+    font-size: var(--text-md);
+  }
+  .videoDescription {
+    font-size: var(--text-xs);
+  }
+}

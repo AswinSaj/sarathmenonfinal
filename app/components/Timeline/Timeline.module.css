@@ -1,0 +1,119 @@
+.title {
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+  margin-top: 4rem;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+}
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+.description {
+  max-width: 1200px;
+  margin: 5rem auto 0;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-size: var(--text-md);
+}
+.description p {
+  line-height: 1.5;
+}
+.description p span {
+  font-size: var(--text-lg);
+  font-weight: bold;
+}
+.timeline {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.years {
+  width: 25%;
+  height: 100svh;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.year {
+  margin: 0 auto;
+  font-size: var(--text-lg);
+  font-weight: bold;
+  opacity: 0.5;
+}
+.active {
+  opacity: 1;
+}
+.achievements {
+  width: 75%;
+  position: relative;
+  height: 640svh;
+  display: flex;
+  flex-direction: column;
+}
+.achievement {
+  min-height: calc(70svh - 10px);
+  position: relative;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--text-lg);
+  font-weight: bold;
+  /* max-width: 700px; */
+}
+
+@media (max-width: 1024px) {
+  .description {
+    font-size: var(--text-sm);
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .year {
+    font-size: var(--text-md);
+  }
+  .achievement {
+    font-size: var(--text-md);
+    max-width: 500px;
+    text-wrap: wrap;
+  }
+  .description {
+    padding: 0 2rem;
+    flex-direction: column;
+    font-size: var(--text-md);
+  }
+  .description p span {
+    font-size: var(--text-lg);
+    line-height: 1;
+  }
+}
+@media (max-width: 425px) {
+  .years {
+    width: 23%;
+  }
+  .year {
+    font-size: var(--text-md);
+  }
+  .achievements {
+    width: 77%;
+  }
+  .achievement {
+    font-size: var(--text-md);
+    padding: 0 3rem;
+    text-wrap: wrap;
+  }
+}

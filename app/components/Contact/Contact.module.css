@@ -1,0 +1,86 @@
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50svh;
+  color: var(--primary-content);
+  border-top: 3px solid var(--text);
+}
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+.heading {
+  font-size: var(--text-2xl);
+  color: var(--text);
+  margin-bottom: 2rem;
+  line-height: 0.9;
+}
+.subHeading {
+  font-size: var(--text-lg);
+  margin-bottom: 1rem;
+}
+.subHeading a {
+  width: fit-content;
+  transition: all 0.5s;
+}
+.subHeading a:hover {
+  color: var(--text);
+}
+.contactPhoto {
+  height: 100%;
+  background-image: url("../../../public/Images/SarathMenon.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1024px) {
+  .heading {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 3rem;
+  }
+  .heading {
+    font-size: var(--text-xl);
+  }
+  .subHeading {
+    font-size: var(--text-md);
+  }
+}
+@media (max-width: 600px) {
+  .contactContent {
+    padding: 5rem 0;
+  }
+  .contactWrapper {
+    grid-template-columns: 1fr;
+    width: 80vw;
+  }
+  .contactPhoto {
+    height: 300px;
+    border-radius: 10px !important;
+    background-position: top;
+  }
+}
+@media (max-width: 425px) {
+  .heading {
+    text-wrap: wrap;
+  }
+  .heading {
+    font-size: var(--text-lg);
+  }
+  .subHeading {
+    font-size: var(--text-sm);
+  }
+}
