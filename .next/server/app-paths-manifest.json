@@ -1,7 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/poems/page": "app/poems/page.js",
-  "/photography/page": "app/photography/page.js",
-  "/photography/[photoGroup]/page": "app/photography/[photoGroup]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
-}

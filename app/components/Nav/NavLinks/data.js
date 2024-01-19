@@ -1,18 +1,18 @@
 export const links = [
   {
-    title: 'Photography',
-    href: '/photography',
+    title: "Photography",
+    href: "/photography",
   },
   {
-    title: 'Filmography',
-    href: '#films',
+    title: "Filmography",
+    href: "/#films",
   },
   {
-    title: 'Poetry',
-    href: '/poems',
+    title: "Poetry",
+    href: "/poems",
   },
   {
-    title: 'Contact',
-    href: '#contact',
+    title: "Contact",
+    href: "/#contact",
   },
-]
+];
